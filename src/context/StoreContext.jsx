@@ -4,7 +4,7 @@ import { food_list as staticFoodList } from '../assets/assets';
 
 export const StoreContext = createContext(null);
 
-const API_URL = "http://localhost:4000/api";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:4000/api";
 
 const StoreContextProvider = ({ children }) => {
   const [food_list, setFoodList] = useState([]);
