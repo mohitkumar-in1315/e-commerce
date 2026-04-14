@@ -1,0 +1,96 @@
+.orders-page { }
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.order-count {
+  background: #f0f0f0;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #666;
+}
+
+.order-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.cat-tab {
+  padding: 6px 14px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background: white;
+  font-size: 13px;
+  color: #555;
+  cursor: pointer;
+}
+.cat-tab:hover { border-color: #2563eb; color: #2563eb; }
+.cat-tab.active { background: #2563eb; color: white; border-color: #2563eb; }
+
+.orders-list { display: flex; flex-direction: column; gap: 14px; }
+
+.order-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.order-id { font-weight: 700; font-size: 15px; color: #1a1a2e; }
+.order-date { font-size: 12px; color: #aaa; margin-top: 2px; }
+
+.order-header-right { display: flex; align-items: center; gap: 12px; }
+.order-amount { font-size: 18px; font-weight: 700; color: #2563eb; }
+
+.status-select {
+  padding: 6px 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  background: white;
+}
+
+.order-customer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 13px;
+  color: #555;
+}
+
+.order-address {
+  font-size: 13px;
+  color: #777;
+  background: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.order-items { display: flex; flex-wrap: wrap; gap: 8px; }
+.order-item-tag {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
